@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Geologica:wght@100&display=swap');
+body{
+    margin:0;
+    padding:0;
+    font-family: 'Geologica', sans-serif;
+}
+.main-container{
+    display:flex;
+    margin:0;
+    padding: auto;
+    background:#d3eeea;
+    width: 100%;
+    height: 100vh;
+}
+
+.card{
+    display:flex;
+    flex-direction:column;
+    /* width: 100px; */
+    margin: auto;
+    padding: 3rem;
+    justify-content: center;
+    align-items: center;
+    /* border: 2px solid #6d6262; */
+    border-radius: 20px;
+    background:whitesmoke;
+    gap: 1rem;
+    color: #363333;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.card .input{
+    display:flex;
+    gap: 1rem;
+    /* flex-direction:column; */
+}
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button
+{
+  -webkit-appearance: none;
+  margin: 0;
+}
+select::-webkit-inner-spin-button,
+select::-webkit-outer-spin-button
+{
+   appearance: none;
+}
+
+
+
+input:focus{
+   outline:0;
+}
+.input div{
+    display:flex;
+    flex-direction:column;
+    
+}
+.card .input input{
+    font-size: medium;
+    background: whitesmoke;
+    border:none;
+   width: 120px;
+    border-bottom: 2px solid #aca6a6;
+   
+}
+
+.card .input select{
+    font-size: medium;
+    background: whitesmoke;
+    border:none;
+   width: 120px;
+    border-bottom: 2px solid #aca6a6;
+   padding-bottom: 1px;
+}
+
+
+
+.card .res input{
+    font-size: medium;
+    /* padding:10px 2rem; */
+    width: 260px;
+    /* border-radius: 10px; */
+    background: whitesmoke;
+    border:none;
+    padding-bottom: 1px;
+    border-bottom: 2px solid #aca6a6;
+}
+.res{
+    display: flex;
+    flex-direction:column;
+}
+
+.type{
+    border: none;
+    background:transparent;
+    width: 20px;
+    position: absolute;
+    right: 0px;
+}
+.res>div{
+    display: flex;
+    position: relative;
+    
+}
+
+#type1{
+ display:none;
+}
+#type2{
+ display:none;
+}
+#type3{
+ display:none;
+}
+
+.card button{
+    padding:10px 35px;
+    border:none;
+    border-radius: 10px;
+    background:#5783db;
+    font-size: 1rem;
+    /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+    color: whitesmoke;
+}
+.card button:hover{
+    color: rgb(254, 253, 253);
+    background: #37808f;
+    cursor: pointer;
+}

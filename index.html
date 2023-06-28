@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tempreatur</title>
+    <link rel="stylesheet" href="./assest/css_files/style.css">
+    
+</head>
+<body>
+<!---------------------- Header------------------------------------------------>
+<div class="main-container">
+    <div class="card">
+        <header>Tempreatur Converter</header>
+        <div class="input">
+            <div>
+                <span>Degree</span>
+                <input type="number" max="50" id="cent" value="0">           
+
+            </div>
+        
+<div>
+    <span>Value Type</span>
+    <select id="type" onchange="Change()">
+        <option value="Celsius">Celsius</option>
+        <option value="Fahrenheit">fahrenheit</option>
+        <option value="Kelvin">Kelvin</option>
+    </select>
+
+</div>
+        </div>
+        <div class="res">
+            <span>Result</span>
+            <!-- <input type="number" size="12" id="result">
+             -->
+             <div>
+
+             
+             <input type="text" id="result" readonly></input>
+             <select class="type" onchange="Convert()" id="type1">
+                <!-- <option value="Celsius">Celsius</option> -->
+                <option value="Fahrenheit">Fahrenheit</option>
+                <option value="Kelvin">Kelvin</option>
+            </select>
+            <select class="type" onchange="Convert()" id="type2">
+                <option value="Celsius">Celsius</option>
+                <!-- <option value="Fahrenheit">fahrenheit</option> -->
+                <option value="Kelvin">Kelvin</option>
+            </select>
+            <select class="type" onchange="Convert()" id="type3">
+                <option value="Celsius">Celsius</option>
+                <option value="Fahrenheit">Fahrenheit</option>
+                <!-- <option value="Kelvin">Kelvin</option> -->
+            </select>
+        </div>
+        </div>
+        
+        <button type="submit" onclick="Convert()" id="convert">Convert</button>
+    </div>
+</div>
+    
+</body>
+<script src="./assest/js_files/main.js"></script>
+</html>
